@@ -135,25 +135,41 @@ productManager.addProduct(
 );
 
 console.log(
-  "-----------------------------Ejemplo Segundo producto creado-----------------------------"
+    "-----------------------------Ejemplo Segundo producto creado-----------------------------"
 );
 productManager.addProduct(
-  "Producto2",
-  "Descripcion producto 2",
-  200,
-  "localhost:3000/imagenes/2",
-  456,
-  2
+    "Producto2",
+    "Descripcion producto 2",
+    200,
+    "localhost:3000/imagenes/2",
+    456,
+    2
 );
 
 console.log(
-  "-----------------------------Prueba de Metodos-----------------------------"
+  "-----------------------------Ejemplo Tercer producto creado-----------------------------"
 );
-console.log("Get all products", productManager.getProducts());
-console.log("Get product ID", productManager.getProductById(0));
-console.log(
-  "Producto actualizado",
-  productManager.updateProduct(1, { title: "ProductoPrueba", stock: 1 })
+productManager.addProduct(
+  "Mayonesa",
+  "Hellmans con sabor natural",
+  1400,
+  "localhost:3000/imagenes/3",
+  123,
+  4
 );
 
-console.log("Producto borrado", productManager.deleteProduct(0));
+// console.log(
+//   "-----------------------------Prueba de Metodos-----------------------------"
+// );
+// console.log("Get all products", productManager.getProducts());
+// console.log("Get product ID", productManager.getProductById(0));
+// console.log(
+//     "Producto actualizado",
+//     productManager.updateProduct(1, { title: "ProductoPrueba", stock: 1 })
+// );
+
+// console.log("Producto borrado", productManager.deleteProduct(0));
+
+module.exports = {
+    productManager
+};
